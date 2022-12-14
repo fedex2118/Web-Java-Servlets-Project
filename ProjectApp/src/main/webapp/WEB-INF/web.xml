@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>ProjectApp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  <session-config>
+  	<cookie-config>
+  		<http-only>true</http-only>
+  		<secure>true</secure>
+  		<max-age>3600</max-age>
+  	</cookie-config>
+  </session-config>
+  
+  <servlet>
+  	<servlet-name>autenticazione</servlet-name>
+  	<servlet-class>com.servlets.ServletAutenticazione</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>autenticazione</servlet-name>
+  	<url-pattern>/autenticazione</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>indexJsp</servlet-name>
+  	<jsp-file>/index.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>indexJsp</servlet-name>
+  	<url-pattern>/indexJsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>loginJsp</servlet-name>
+  	<jsp-file>/jsp/login.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>loginJsp</servlet-name>
+  	<url-pattern>/loginJsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>registrazione</servlet-name>
+  	<servlet-class>com.servlets.ServletRegistrazione</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>registrazione</servlet-name>
+  	<url-pattern>/registrazione</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>signInJsp</servlet-name>
+  	<jsp-file>/jsp/signIn.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>signInJsp</servlet-name>
+  	<url-pattern>/signInJsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>logout</servlet-name>
+  	<servlet-class>com.servlets.ServletLogout</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>logout</servlet-name>
+  	<url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>uploadProdotti</servlet-name>
+  	<servlet-class>com.servlets.UploadProdottiServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>uploadProdotti</servlet-name>
+  	<url-pattern>/uploadProdotti</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>DashProdottiJsp</servlet-name>
+  	<jsp-file>/jsp/dashProdotti.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>DashProdottiJsp</servlet-name>
+  	<url-pattern>/DashProdottiJsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>DashCategoriaJsp</servlet-name>
+  	<jsp-file>/jsp/dashCategoria.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>DashCategoriaJsp</servlet-name>
+  	<url-pattern>/DashCategoriaJsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>categoria</servlet-name>
+  	<servlet-class>com.servlets.UploadCategoriaServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>categoria</servlet-name>
+  	<url-pattern>/uploadCategoria</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>modificaProdotti</servlet-name>
+  	<servlet-class>com.servlets.ModificaProdottiServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>modificaProdotti</servlet-name>
+  	<url-pattern>/modificaProdotti</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>modificaProdottiJsp</servlet-name>
+  	<jsp-file>/jsp/modificaProdotti.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>modificaProdottiJsp</servlet-name>
+  	<url-pattern>/modificaProdottiJsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>acquisti</servlet-name>
+  	<servlet-class>com.servlets.ServletAcquisti</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>acquisti</servlet-name>
+  	<url-pattern>/acquisti</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>carrello</servlet-name>
+  	<servlet-class>com.servlets.ServletCarrello</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>carrello</servlet-name>
+  	<url-pattern>/carrello</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>aggiungiCarrello</servlet-name>
+  	<servlet-class>com.servlets.AggiungiCarrello</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>aggiungiCarrello</servlet-name>
+  	<url-pattern>/aggiungiCarrello</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>profiloJsp</servlet-name>
+  	<jsp-file>/jsp/profilo.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>profiloJsp</servlet-name>
+  	<url-pattern>/profiloJsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>uploadRecensione</servlet-name>
+  	<servlet-class>com.servlets.UploadRecensioneServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>uploadRecensione</servlet-name>
+  	<url-pattern>/uploadRecensione</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>aggiungiProduttore</servlet-name>
+  	<servlet-class>com.servlets.ServletAggiungiProduttore</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>aggiungiProduttore</servlet-name>
+  	<url-pattern>/aggiungiProduttore</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>produttoreAggiunto</servlet-name>
+  	<servlet-class>com.servlets.ServletProduttoreAggiunto</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>produttoreAggiunto</servlet-name>
+  	<url-pattern>/produttoreAggiunto</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>svuotaCarrello</servlet-name>
+  	<servlet-class>com.servlets.SvuotaCarrelloServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>svuotaCarrello</servlet-name>
+  	<url-pattern>/svuotaCarrello</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
