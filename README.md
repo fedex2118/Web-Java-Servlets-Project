@@ -9,7 +9,7 @@ It is entirely made with java with some little html, css bootstrap and javascrip
 The web site was supposed to let users sign-in, login buy products and let some special users like vendors add their products and let the admins do some other "special" tasks.
 Below some images to show the website from different users perspectives:
 
-Home - Normal User Perspective
+# Home - Normal User Perspective
 ![UserHome](Images/UserHome.png)
 Products Bought
 ![ProductsBought](Images/ProductsBought.png)
