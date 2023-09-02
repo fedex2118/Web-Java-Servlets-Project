@@ -21,4 +21,4 @@ Product Review
 Admin Page
 ![AdminPage](Images/AdminPage.png)
 Modify Page
-![AdminHome](Images/ModifyPage.png)
+![ModifyPage](Images/ModifyPage.png)
