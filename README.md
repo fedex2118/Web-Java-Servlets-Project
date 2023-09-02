@@ -7,3 +7,6 @@ The theme of the project were web applications and it was focused on the server 
 It is entirely made with java with some little html, css bootstrap and javascript and of course mysql for the database part.
 
 The web site was supposed to let users sign-in, login buy products and let some special users like vendors add their products and let the admins do some other "special" tasks.
+
+Home - Normal User Perspective
+![UserHome](Images/UserHome.png)
