@@ -11,15 +11,15 @@ Below some images to show the website from different users perspectives:
 
 # Home - Normal User Perspective
 ![UserHome](Images/UserHome.png)
-Products Bought
+# Products Bought
 ![ProductsBought](Images/ProductsBought.png)
-Login
+# Login
 ![Login](Images/Login.png)
-Home - Admin Perspective
+# Home - Admin Perspective
 ![AdminHome](Images/AdminHome.png)
-Product Review
+# Product Review
 ![ProductReview](Images/ProductReview.png)
-Admin Page
+# Admin Page
 ![AdminPage](Images/AdminPage.png)
-Modify Page
+# Modify Page
 ![ModifyPage](Images/ModifyPage.png)
